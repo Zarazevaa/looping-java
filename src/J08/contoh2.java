@@ -4,23 +4,28 @@
  * and open the template in the editor.
  */
 package J08;
-
+import java.util.Scanner;
 /**
  *
  * @author ZEVA
  */
 public class contoh2 {
     public static void main(String[] args) {
+        Scanner baca = new Scanner(System.in);
         // FOR
+         System.out.print("Masukkan nilai akhir: ");
         int x;
-        for(x = 1; x <= 10; x++)
+        int n;
+        n = baca.nextInt();
+        
+        for(x = 1; x <= n; x++)
         {
             System.out.print(x + " ");
         }
         
         // WHILE
         x = 1;
-        while (x <= 10)
+        while (x <= n)
         {
             System.out.println(x + " ");
             x++;
@@ -33,7 +38,7 @@ public class contoh2 {
             System.out.println(x + " ");
             x++;
         }
-        while (x <= 10);
+        while (x <= n);
                 
     }
     
